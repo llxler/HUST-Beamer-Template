@@ -105,7 +105,7 @@
     \frametitle{Inference Setting}
     Evaluate LLMs under two distinct settings:
     \begin{itemize}
-        \item \textbf{Single Round:} present the model with the initial few rows of spreadsheet files within the prompt, allowing for \textbf{only one inference}.
+        \item \textbf{Single-Round:} present the model with the initial few rows of spreadsheet files within the prompt, allowing for \textbf{only one inference}.
         \item \textbf{Multi-Round:} Building on the single-round prompt setting, furnish error feedback if the code fails to execute, enabling the model to refine its code in subsequent iterations.
     \end{itemize}
 \end{frame}
@@ -122,6 +122,22 @@
     \includegraphics[width=1\linewidth]{pic/performance.jpg}
     \vspace{0.2cm}
     {\footnotesize Figure 3: Performance of representative models on SPREADSHEETBENCH \(\%\).}
+\end{frame}
+
+\section{Motivation}
+
+\begin{frame}
+    \begin{itemize}
+        \item The concept of constructing a benchmark:
+        \begin{itemize}
+            \item Data quality
+            \item Data construction
+            \item Data diversity
+        \end{itemize}
+        \item Methods to address data leakage issues
+        \item Developing a pipeline for evaluating problems using LLMs
+        \includegraphics[width=1\linewidth]{pic/OJ Evaluation pipeline.jpg}
+    \end{itemize}
 \end{frame}
 
 \begin{frame}
