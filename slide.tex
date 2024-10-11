@@ -9,7 +9,7 @@
 \author{雷翔麟}
 \title{SPREADSHEETBENCH}
 \institute{华中科技大学计算机科学与技术学院}
-\date{2024年10月10日}
+\date{2024年10月11日}
 \usepackage{HUST}
 
 % defs
@@ -112,8 +112,44 @@
 
 \section{Codes}
 \begin{frame}
-    \frametitle{GitHub Link}
-    GitHub Link: \href{https://github.com/RUCKBReasoning/SpreadsheetBench}{https://github.com/RUCKBReasoning/SpreadsheetBench}
+    \frametitle{LLM Processing}
+    \href{https://github.com/RUCKBReasoning/SpreadsheetBench}{https://github.com/RUCKBReasoning/SpreadsheetBench}
+    \href{https://github.com/gersteinlab/MedAgents}{https://github.com/gersteinlab/MedAgents}
+    \begin{enumerate}
+        \item Select datasets.
+        \item Pass function parameters.
+        \item Based on the function parameters, choose:
+        \begin{itemize}
+            \item Dataset
+            \item Model type
+            \item Processing method
+            \item Output location
+        \end{itemize}
+        \item Extract, clean, and format the data, then pass it to the large model.
+        \item Utilize the large model and the established pipeline for processing.
+        \item Output the processed results to files or other locations.
+        \item Use the evaluation module to assess and score the results.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Enhancing LLM Problem-Solving}
+    \begin{itemize}
+        \item \textbf{Prompt Engineering}: Designing precise prompts to guide LLMs towards generating higher-quality responses by framing the input effectively.
+        \item \textbf{Fine-Tuning}: Adapting an LLM to specific domains by training it on domain-specific datasets, improving its performance in that area.
+        \item \textbf{Chain-of-Thought (CoT)}: Encouraging step-by-step reasoning in the model, simulating how humans break down complex tasks into simpler steps to enhance logical consistency.
+        \item \textbf{Self-Consistency (SC)}: Generating multiple independent reasoning chains for the same problem and choosing the most frequent answer to reduce randomness and errors.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Enhancing LLM Problem-Solving}
+    \begin{itemize}
+        \item \textbf{Multi-Round Interaction}: Enabling the model to refine its answers through multiple rounds of interaction, adjusting based on user feedback for improved accuracy.
+        \item \textbf{Multi-Agent System}: Introducing multiple agents or models to collaboratively solve tasks, leveraging diverse skills and knowledge for more effective problem-solving.
+        \item \textbf{Retrieval-Augmented Generation (RAG)}: Combining generation with information retrieval, allowing the model to fetch relevant information from external knowledge sources to improve answer accuracy.
+        \item \textbf{Classical Algorithms}: For example, using C4.5 Discretization for data handling and PCA for data analysis and preprocessing.
+    \end{itemize}
 \end{frame}
 
 \section{Conclusion}
@@ -137,6 +173,7 @@
         \item Methods to address data leakage issues
         \item Developing a pipeline for evaluating problems using LLMs
         \includegraphics[width=1\linewidth]{pic/OJ Evaluation pipeline.jpg}
+        \item Some methods to enable LLMs to handle problems more effectively
     \end{itemize}
 \end{frame}
 
